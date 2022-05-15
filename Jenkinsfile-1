@@ -10,7 +10,8 @@ pipeline {
         parameters {
           string(defaultValue: 'Dave', name: 'FIRST_NAME', trim: true) 
           choice choices: ['перв', 'втор'], name: 'выбор'
-          string 'стр'
+          string name: 'str1'
+          string name: 'str2'
           choice choices: ['one', 'two', 'three'], name: 'test_list'
         }
       }
