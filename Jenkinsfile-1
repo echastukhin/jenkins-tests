@@ -9,7 +9,7 @@ pipeline {
         ok "Submit"
         parameters {
           string(defaultValue: 'Dave', name: 'FIRST_NAME', trim: true) 
-          choice choices: ['перв', 'втор'], name: 'выбор' 
+          choice choices: ['перв', 'втор'], name: 'выбор', choiceType: 'PT_SINGLE_SELECT' 
           string 'стр'
           choice choices: ['one', 'two', 'three'], name: 'test_list'
         }
