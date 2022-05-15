@@ -12,7 +12,8 @@ pipeline {
           choice choices: ['перв', 'втор'], name: 'выбор'
           string name: 'str1'
           string name: 'str2'
-          choice choices: ['one', 'two', 'three'], name: 'test_list'
+          checkboxParameter(name: 'Platforms1', format: 'JSON',
+                pipelineSubmitContent: '{"CheckboxParameter": [{"key": "nt","value": "nt"},{"key": "linux","value": "linux"},{"key": "unix","value": "unix"}]}', description: '')
         }
       }
       steps {
