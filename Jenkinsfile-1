@@ -11,6 +11,7 @@ pipeline {
           string(defaultValue: 'Dave', name: 'FIRST_NAME', trim: true) 
           choice choices: ['перв', 'втор'], name: 'выбор' 
           string 'стр'
+          choice choices: ['one', 'two', 'three'], name: 'test_list'
         }
       }
       steps {
