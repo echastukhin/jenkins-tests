@@ -9,9 +9,8 @@ pipeline {
         ok "Submit"
         parameters {
           string(defaultValue: 'Dave', name: 'FIRST_NAME', trim: true) 
-          choice choices: ['перв', 'втор'], name: 'выбор'
+          choice choices: ['перв', 'втор'], name: 'выбор' 
           string 'стр'
-
         }
       }
       steps {
