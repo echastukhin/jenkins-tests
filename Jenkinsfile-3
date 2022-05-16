@@ -1,11 +1,6 @@
 pipeline {
     agent none
-    
-    stages {
-        
-        stage('Hello') {
-           agent any
-           input {
+    input {
                    message "What is your first name?"
                    ok "Submit"
                    parameters {
@@ -15,6 +10,11 @@ pipeline {
                 pipelineSubmitContent: "CheckboxParameter: \n  - key: monday\n    value: monday\n  - key: tuesday\n    value: tuesday\n", description: '')
     }
                   }
+    stages {
+        
+        stage('Hello') {
+           agent any
+           
             steps {
                 echo 'Hello World'
             }
